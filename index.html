@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.59fr 0.51fr;
+      grid-template-rows: 1fr 1fr 1fr 1.2fr 1fr 1fr 0.2fr;
+      grid-gap: 9px;
+      width: 748px;
+      height: 748px;
+      background-color: #000000;
+      margin: 20px auto;
+    }
+    
+    .red {
+      grid-column: span 3;
+      grid-row: span 3;
+      background-color: #E72F24;
+    }
+
+    .smoke {
+      background-color: #F0F1EC;
+    }
+    
+    .first {
+      grid-column: span 4;
+      grid-row: span 3;
+    }
+
+    .second {
+      grid-column: span 3;
+      grid-row: span 3;
+    }
+
+    .three {
+      grid-column: span 3;
+      grid-row: span 3;
+    }
+
+    .four {
+      grid-row: span 3;
+    }
+
+    .five {
+      grid-column: span 3;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .yellow {
+      grid-column: span 2;
+      background-color: #F9D01E;
+    }
+
+    .gray {
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="smoke first"></div>
+    <div class="smoke second"></div>
+    <div class="smoke three"></div>
+    <div class="blue"></div>
+    <div class="smoke four"></div>
+    <div class="smoke five"></div>
+    <div class="yellow"></div>
+    <div class="gray"></div>
+  </div>
+</body>
+
+</html>
